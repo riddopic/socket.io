@@ -655,7 +655,7 @@ describe('socket.io', function(){
         });
       });
     });
-    
+
     it('should not reuse same-namespace connections', function(done){
       var srv = http();
       var sio = io(srv);
@@ -745,6 +745,7 @@ describe('socket.io', function(){
         });
       }
     });
+
 
     it('should find all clients across namespace rooms', function(done){
       var srv = http();
@@ -1533,7 +1534,7 @@ describe('socket.io', function(){
         });
       });
     });
-    
+
     it('should see query parameters sent from secondary namespace connections in handshake object', function(done){
       var srv = http();
       var sio = io(srv);
